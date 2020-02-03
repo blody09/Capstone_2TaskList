@@ -157,13 +157,13 @@ namespace Capstone2_TaskList
                 try
                 {
                     due = DateTime.Parse(GetUserInput("When will the task be due?(mm/dd/yyy)"));
-                    validateDate = true;
+                    validateDate = false;
                     
                 }
                 catch
                 {
                     Console.WriteLine("Please enter a valid due date. mm/dd/yyyy");
-                    validateDate = false;
+                    validateDate = true;
                 }
              
             }
